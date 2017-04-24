@@ -1,0 +1,536 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Hexo我有一个小小的世界</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="sycpiek">
+    
+
+    
+    <meta name="description" content="title: Hexo 入门指南（四） - 页面、导航、边栏、底栏categories: Hexo  tags: Hexo页面命令行键入： ===================== $ hexo new page about ===================== 会在source/about中生成index.html。这个就叫做页面，不在文章列表显示，可以通过http://localho">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo我有一个小小的世界">
+<meta property="og:url" content="http://sycpiek.github.io/2017/04/24/Hexo 入门指南（四） - 页面、导航、边栏、底栏/index.html">
+<meta property="og:site_name" content="Hexo我有一个小小的世界">
+<meta property="og:description" content="title: Hexo 入门指南（四） - 页面、导航、边栏、底栏categories: Hexo  tags: Hexo页面命令行键入： ===================== $ hexo new page about ===================== 会在source/about中生成index.html。这个就叫做页面，不在文章列表显示，可以通过http://localho">
+<meta property="og:updated_time" content="2016-10-22T06:57:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo我有一个小小的世界">
+<meta name="twitter:description" content="title: Hexo 入门指南（四） - 页面、导航、边栏、底栏categories: Hexo  tags: Hexo页面命令行键入： ===================== $ hexo new page about ===================== 会在source/about中生成index.html。这个就叫做页面，不在文章列表显示，可以通过http://localho">
+<meta name="twitter:creator" content="@sycpiek">
+<link rel="publisher" href="sycpiek">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Hexo我有一个小小的世界" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Hexo我有一个小小的世界" title="Hexo我有一个小小的世界"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Hexo我有一个小小的世界">Hexo我有一个小小的世界</a></h1>
+				<h2 class="blog-motto">这个世界对我来说很总要</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:sycpiek.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2017/04/24/Hexo 入门指南（四） - 页面、导航、边栏、底栏/" title="" itemprop="url"></a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="https://plus.google.com/sycpiek?rel=author" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
+		
+  <p class="article-time">
+    <time datetime="2017-04-24T03:49:49.603Z" itemprop="datePublished"> 发表于 2017-04-24</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#tags-Hexo"><span class="toc-number">1.</span> <span class="toc-text">tags: Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#页面"><span class="toc-number">2.</span> <span class="toc-text">页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导航"><span class="toc-number">3.</span> <span class="toc-text">导航</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#边栏"><span class="toc-number">4.</span> <span class="toc-text">边栏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#底栏"><span class="toc-number">5.</span> <span class="toc-text">底栏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#banner"><span class="toc-number">6.</span> <span class="toc-text">banner</span></a></li></ol>
+		
+		</div>
+		
+		<hr>
+<p>title: Hexo 入门指南（四） - 页面、导航、边栏、底栏<br>categories: Hexo </p>
+<h2 id="tags-Hexo"><a href="#tags-Hexo" class="headerlink" title="tags: Hexo"></a>tags: Hexo</h2><h2 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h2><p>命令行键入：</p>
+<p>=====================</p>
+<pre><code>$ hexo new page about
+</code></pre><p>=====================</p>
+<p>会在source/about中生成index.html。这个就叫做页面，不在文章列表显示，可以通过<a href="http://localhost/about浏览。" target="_blank" rel="external">http://localhost/about浏览。</a></p>
+<p>页面支持文章的大部分属性，除了分类和标签。</p>
+<h2 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h2><p>打开主题中的设置文件，即themes\<theme_name>_config.yml（其中<theme_name>是当前主题的名字，默认为landscape，下同），找到menu:，在列表的末端添加About: 关于。刷新页面，导航栏上就出现了关于链接。</theme_name></theme_name></p>
+<h2 id="边栏"><a href="#边栏" class="headerlink" title="边栏"></a>边栏</h2><p>进入themes\<theme_name>\layout_widget目录中，创建about.ejs文件，模仿其他文件中的模版，输入以下内容：</theme_name></p>
+<p>=======================================</p>
+<pre><code>&lt;% if (site.tags.length){ %&gt; 
+
+  &lt;div class=&quot;widget-wrap&quot;&gt; 
+
+    &lt;h3 class=&quot;widget-title&quot;&gt;About&lt;/h3&gt; 
+
+    &lt;div class=&quot;widget&quot;&gt; 
+
+      邮箱：xxx@xxx.com&lt;br /&gt; 
+
+      微博：@xxxxx 
+
+    &lt;/div&gt; 
+
+  &lt;/div&gt; 
+
+&lt;% } %&gt;
+</code></pre><p>=======================================</p>
+<p>打开themes\<theme_name>_config.yml，找到#Sidebar，在最后面添加- about。刷新页面。</theme_name></p>
+<h2 id="底栏"><a href="#底栏" class="headerlink" title="底栏"></a>底栏</h2><p>打开themes\<theme_name>\layout_partial\footer.ejs修改。</theme_name></p>
+<h2 id="banner"><a href="#banner" class="headerlink" title="banner"></a>banner</h2><p>打开themes\<theme_name>\source\css\images，把banner.jpg换掉。</theme_name></p>
+<p>##本文来源网络收集.<br>categories: Hexo </p>
+<p>tags: Hexo</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://sycpiek.github.io/2017/04/24/Hexo 入门指南（四） - 页面、导航、边栏、底栏/" data-title="Hexo我有一个小小的世界" data-tsina="sycpiek" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2017/04/24/Hexo 入门指南（五） - 搬家 & 备份/" title="Hexo 入门指南（五） - 搬家 &amp; 备份">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Hexo 入门指南（五） - 搬家 &amp; 备份</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2017/04/24/更新了一下主题/"  title="更新了一下主题。">
+ <strong>下一篇：</strong><br/> 
+ <span>更新了一下主题。
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#tags-Hexo"><span class="toc-number">1.</span> <span class="toc-text">tags: Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#页面"><span class="toc-number">2.</span> <span class="toc-text">页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导航"><span class="toc-number">3.</span> <span class="toc-text">导航</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#边栏"><span class="toc-number">4.</span> <span class="toc-text">边栏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#底栏"><span class="toc-number">5.</span> <span class="toc-text">底栏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#banner"><span class="toc-number">6.</span> <span class="toc-text">banner</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="sycpiek" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>5</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>5</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/瞎写/" title="瞎写">瞎写<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+<div class="doubanshow">
+<p class="asidetitle">豆瓣秀</p>
+<div>
+<script type="text/javascript" src="http://www.douban.com/service/badge/sycpiek/?show=collection&amp;n=12&amp;columns=3&amp;hidelogo=yes&amp;hideself=yes&amp;cat=book|movie" ></script>
+</div>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=sycpiek&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m sycpiek. <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/sycpiek" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/sycpiek" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		<a href="http://stackoverflow.com/users/sycpiek" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		<a href="https://twitter.com/sycpiek" target="_blank" class="icon-twitter" title="twitter"></a>
+		
+		
+		<a href="https://www.facebook.com/sycpiek" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		<a href="https://www.linkedin.com/in/sycpiek" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		<a href="https://www.douban.com/people/sycpiek" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		<a href="http://www.zhihu.com/people/sycpiek" target="_blank" class="icon-zhihu" title="知乎"></a>
+		
+		
+		<a href="https://plus.google.com/sycpiek?rel=author" target="_blank" class="icon-google_plus" title="Google+"></a>
+		
+		
+		<a href="mailto:sycpiek" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="sycpiek">sycpiek</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

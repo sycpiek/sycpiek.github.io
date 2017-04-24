@@ -1,0 +1,552 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Hexo 入门指南（一） - 简介 &amp; 准备 | Hexo我有一个小小的世界</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="sycpiek">
+    
+
+    
+    <meta name="description" content="Hexo是一个开源的静态博客生成器,用node.js开发,作者是台湾大学生tommy351。 为什么是博客对于个人网站来说,没有比博客更合适的形式了。在博客中,文章才是最主要的,一切都显得主次分明,干净利落。相比之下,论坛中主题和回复鱼龙混杂,阅读体验非常差。同时,博客比论坛的数据库小很多,便于维护。 为什么是静态博客很多人选择在虚拟主机或vps上面搭建动态博客。但是这些主机商通常“免费的不稳定,">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 入门指南（一） - 简介 & 准备">
+<meta property="og:url" content="http://sycpiek.github.io/2017/04/24/Hexo 入门指南（一） - 简介 & 准备/index.html">
+<meta property="og:site_name" content="Hexo我有一个小小的世界">
+<meta property="og:description" content="Hexo是一个开源的静态博客生成器,用node.js开发,作者是台湾大学生tommy351。 为什么是博客对于个人网站来说,没有比博客更合适的形式了。在博客中,文章才是最主要的,一切都显得主次分明,干净利落。相比之下,论坛中主题和回复鱼龙混杂,阅读体验非常差。同时,博客比论坛的数据库小很多,便于维护。 为什么是静态博客很多人选择在虚拟主机或vps上面搭建动态博客。但是这些主机商通常“免费的不稳定,">
+<meta property="og:updated_time" content="2016-10-22T06:52:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo 入门指南（一） - 简介 & 准备">
+<meta name="twitter:description" content="Hexo是一个开源的静态博客生成器,用node.js开发,作者是台湾大学生tommy351。 为什么是博客对于个人网站来说,没有比博客更合适的形式了。在博客中,文章才是最主要的,一切都显得主次分明,干净利落。相比之下,论坛中主题和回复鱼龙混杂,阅读体验非常差。同时,博客比论坛的数据库小很多,便于维护。 为什么是静态博客很多人选择在虚拟主机或vps上面搭建动态博客。但是这些主机商通常“免费的不稳定,">
+<meta name="twitter:creator" content="@sycpiek">
+<link rel="publisher" href="sycpiek">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Hexo我有一个小小的世界" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Hexo我有一个小小的世界" title="Hexo我有一个小小的世界"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Hexo我有一个小小的世界">Hexo我有一个小小的世界</a></h1>
+				<h2 class="blog-motto">这个世界对我来说很总要</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:sycpiek.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2017/04/24/Hexo 入门指南（一） - 简介 & 准备/" title="Hexo 入门指南（一） - 简介 &amp; 准备" itemprop="url">Hexo 入门指南（一） - 简介 &amp; 准备</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="https://plus.google.com/sycpiek?rel=author" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
+		
+  <p class="article-time">
+    <time datetime="2017-04-24T03:49:49.619Z" itemprop="datePublished"> 发表于 2017-04-24</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么是博客"><span class="toc-number">1.</span> <span class="toc-text">为什么是博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么是静态博客"><span class="toc-number">2.</span> <span class="toc-text">为什么是静态博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">3.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-git"><span class="toc-number">4.</span> <span class="toc-text">安装 git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-node-js"><span class="toc-number">5.</span> <span class="toc-text">安装 node.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#linux下"><span class="toc-number">5.1.</span> <span class="toc-text">linux下:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#markdown-编辑器"><span class="toc-number">6.</span> <span class="toc-text">markdown 编辑器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gitcafe"><span class="toc-number">7.</span> <span class="toc-text">gitcafe</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相关网页"><span class="toc-number">8.</span> <span class="toc-text">相关网页</span></a></li></ol>
+		
+		</div>
+		
+		<p>Hexo是一个开源的静态博客生成器,用node.js开发,作者是台湾大学生tommy351。</p>
+<h2 id="为什么是博客"><a href="#为什么是博客" class="headerlink" title="为什么是博客"></a>为什么是博客</h2><p>对于个人网站来说,没有比博客更合适的形式了。在博客中,文章才是最主要的,一切都显得主次分明,干净利落。相比之下,论坛中主题和回复鱼龙混杂,阅读体验非常差。同时,博客比论坛的数据库小很多,便于维护。</p>
+<h2 id="为什么是静态博客"><a href="#为什么是静态博客" class="headerlink" title="为什么是静态博客"></a>为什么是静态博客</h2><p>很多人选择在虚拟主机或vps上面搭建动态博客。但是这些主机商通常“免费的不稳定,稳定的不免费”。前一段时间,我观察了我的个人博客友链上面的几个站点,一部分在十几天之后就销声匿迹了。独立博客如此麻烦的维护工作,能不能减轻一些呢?正如阮一峰前辈所说,blogger分为三个阶段。最开始,是门户博客。之后,是独立博客。最后,觉得独立博客自己管理起来费劲,便找个别人来管的空间,自己负责写就好。如果我们能够找到这样的空间,在自己保留最大控制权前提下,由别人托管,会省去不少事情。</p>
+<p>静态博客编译之后是纯html页面,优点就是支持它的环境十分好找,例如github、gitcafe、七牛云存储等站点都支持静态页面托管,自然是我们的首选了。由于github page在国内访问较慢,这篇文章用gitcafe做示范。gitcafe是天朝本地化的github,同样提供展示页和域名绑定功能,不需要备案,就是爽。</p>
+<p>但是静态博客并非没有缺点。动态博客更新文章时,脚本是不变的,只需要更新数据库。静态博客要频繁改动文件,不支持增量式上传的东西,比如ftp,就难于管理。此外,还要十分熟悉git各种命令,才能部署页面。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li><p>git</p>
+</li>
+<li><p>node.js</p>
+</li>
+<li><p>markdown编辑器</p>
+</li>
+<li><p>gitcafe</p>
+</li>
+<li><p>域名</p>
+</li>
+</ol>
+<p>markdown编辑器是非必须的,只要你熟悉语法,随便一个编辑器来写都不是问题。</p>
+<p>域名也是非必须的,gitcafe pages服务提供免费的二级域名。注册域名的教程这里就不写了。</p>
+<h2 id="安装-git"><a href="#安装-git" class="headerlink" title="安装 git"></a>安装 git</h2><p>git的客户端,本人推荐git-scm。</p>
+<p>linux下面,在bash中键入:</p>
+<p>(Ubuntu, Debian)</p>
+<p>==========================</p>
+<p>$ sudo apt-get install git</p>
+<p>==========================</p>
+<p>(Fedora, Red Hat, CentOS)</p>
+<p>======================</p>
+<p>$ sudo yum install git</p>
+<p>======================</p>
+<p>windows或mac下,直接到git-scm官网下载安装。</p>
+<h2 id="安装-node-js"><a href="#安装-node-js" class="headerlink" title="安装 node.js"></a>安装 node.js</h2><h3 id="linux下"><a href="#linux下" class="headerlink" title="linux下:"></a>linux下:</h3><p>=============================</p>
+<pre><code>$ sudo apt-get install nodejs 
+
+$ sudo apt-get install npm
+</code></pre><p>=============================</p>
+<p>yum同理。</p>
+<p>windows或者mac下,直接到node.js官网下载安装。    windows还要设置环境变量,把node.js安装路径写进path里面,用半角分号分隔。</p>
+<h2 id="markdown-编辑器"><a href="#markdown-编辑器" class="headerlink" title="markdown 编辑器"></a>markdown 编辑器</h2><p>windows下推荐markdown pad。</p>
+<p>mac下推荐mou。</p>
+<h2 id="gitcafe"><a href="#gitcafe" class="headerlink" title="gitcafe"></a>gitcafe</h2><p>首先注册一个账号,之后点击查看如何使用pages服务。</p>
+<h2 id="相关网页"><a href="#相关网页" class="headerlink" title="相关网页"></a>相关网页</h2><ol>
+<li><p>Hexo主页</p>
+</li>
+<li><p>Hexo github 地址</p>
+</li>
+<li><p>git book</p>
+</li>
+</ol>
+<p>##本文来源网络收集.<br>categories: Hexo </p>
+<p>tags: Hexo</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://sycpiek.github.io/2017/04/24/Hexo 入门指南（一） - 简介 & 准备/" data-title="Hexo 入门指南（一） - 简介 &amp; 准备 | Hexo我有一个小小的世界" data-tsina="sycpiek" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2017/04/24/更新了一下主题/" title="更新了一下主题。">
+  <strong>上一篇：</strong><br/>
+  <span>
+  更新了一下主题。</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2017/04/24/Hexo 入门指南（二） - 安装、初始化和配置/"  title="Hexo 入门指南（二） - 安装、初始化和配置">
+ <strong>下一篇：</strong><br/> 
+ <span>Hexo 入门指南（二） - 安装、初始化和配置
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么是博客"><span class="toc-number">1.</span> <span class="toc-text">为什么是博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么是静态博客"><span class="toc-number">2.</span> <span class="toc-text">为什么是静态博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">3.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-git"><span class="toc-number">4.</span> <span class="toc-text">安装 git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-node-js"><span class="toc-number">5.</span> <span class="toc-text">安装 node.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#linux下"><span class="toc-number">5.1.</span> <span class="toc-text">linux下:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#markdown-编辑器"><span class="toc-number">6.</span> <span class="toc-text">markdown 编辑器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gitcafe"><span class="toc-number">7.</span> <span class="toc-text">gitcafe</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相关网页"><span class="toc-number">8.</span> <span class="toc-text">相关网页</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="sycpiek" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>5</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>5</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/瞎写/" title="瞎写">瞎写<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+<div class="doubanshow">
+<p class="asidetitle">豆瓣秀</p>
+<div>
+<script type="text/javascript" src="http://www.douban.com/service/badge/sycpiek/?show=collection&amp;n=12&amp;columns=3&amp;hidelogo=yes&amp;hideself=yes&amp;cat=book|movie" ></script>
+</div>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=sycpiek&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m sycpiek. <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/sycpiek" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/sycpiek" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		<a href="http://stackoverflow.com/users/sycpiek" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		<a href="https://twitter.com/sycpiek" target="_blank" class="icon-twitter" title="twitter"></a>
+		
+		
+		<a href="https://www.facebook.com/sycpiek" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		<a href="https://www.linkedin.com/in/sycpiek" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		<a href="https://www.douban.com/people/sycpiek" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		<a href="http://www.zhihu.com/people/sycpiek" target="_blank" class="icon-zhihu" title="知乎"></a>
+		
+		
+		<a href="https://plus.google.com/sycpiek?rel=author" target="_blank" class="icon-google_plus" title="Google+"></a>
+		
+		
+		<a href="mailto:sycpiek" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="sycpiek">sycpiek</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
