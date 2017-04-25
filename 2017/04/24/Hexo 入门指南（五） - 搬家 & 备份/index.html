@@ -18,7 +18,7 @@
 <meta property="og:url" content="http://sycpiek.github.io/2017/04/24/Hexo 入门指南（五） - 搬家 & 备份/index.html">
 <meta property="og:site_name" content="Hexo我有一个小小的世界">
 <meta property="og:description" content="搬入hexo首先，需要拿到原博客数据的xml文件。 wordpress的话，后台“工具-&amp;gt;导出”就可以生成。点点和lofter也支持类似操作。如果遇到不支持导出xml的博客，先用http://www.diandian.com/transfer/转到点点，再用http://www.diandian.com/backup导出XML文件。 之后，安装hexo-migrator-wordpress这">
-<meta property="og:updated_time" content="2017-04-25T02:28:52.079Z">
+<meta property="og:updated_time" content="2017-04-25T02:40:59.607Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 入门指南（五） - 搬家 & 备份">
 <meta name="twitter:description" content="搬入hexo首先，需要拿到原博客数据的xml文件。 wordpress的话，后台“工具-&amp;gt;导出”就可以生成。点点和lofter也支持类似操作。如果遇到不支持导出xml的博客，先用http://www.diandian.com/transfer/转到点点，再用http://www.diandian.com/backup导出XML文件。 之后，安装hexo-migrator-wordpress这">
@@ -104,19 +104,14 @@
 		<h2 id="搬入hexo"><a href="#搬入hexo" class="headerlink" title="搬入hexo"></a>搬入hexo</h2><p>首先，需要拿到原博客数据的xml文件。</p>
 <p>wordpress的话，后台“工具-&gt;导出”就可以生成。点点和lofter也支持类似操作。如果遇到不支持导出xml的博客，先用<a href="http://www.diandian.com/transfer/转到点点，再用http://www.diandian.com/backup导出XML文件。" target="_blank" rel="external">http://www.diandian.com/transfer/转到点点，再用http://www.diandian.com/backup导出XML文件。</a></p>
 <p>之后，安装hexo-migrator-wordpress这个插件</p>
-<p>==========================================</p>
-<pre><code>$ npm install hexo-migrator-wordpress --save
-</code></pre><p>==========================================</p>
+<p><code>$ npm install hexo-migrator-wordpress --save</code></p>
 <p>运行</p>
-<p>====================================</p>
-<pre><code>$ hexo migrate wordpress wordpress.xml
-</code></pre><p>====================================</p>
+<p><code>$ hexo migrate wordpress wordpress.xml</code></p>
 <p>xml中的数据就导入到source中了。最后的工作是修复链接什么的。</p>
 <h2 id="搬出hexo"><a href="#搬出hexo" class="headerlink" title="搬出hexo"></a>搬出hexo</h2><p>没有什么好的办法。可以写个脚本遍历public文件夹，之后post到指定目录或者制作成xml文件。</p>
 <h2 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h2><p>有句话说得好，数据恢复的最佳方案永远是“备份备份再备份”。</p>
 <p>个人建议，分别备份站点配置和文章。站点配置包括blog根目录除了source和public文件夹的所有内容，文章就是source文件夹的全部内容。站点配置不经常变的话可以不用经常备份。</p>
-<p>##本文来源网络收集.<br>categories: Hexo </p>
-<p>tags: Hexo</p>
+<p>##本文来源网络收集.</p>
   
 	</div>
 		<footer class="article-footer clearfix">

@@ -11,17 +11,17 @@
     
 
     
-    <meta name="description" content="评论hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。 首先到多说官网去注册一个账号。然后点击进入添加站点页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为short_name。 在_config.yml中添加多说的配置： ============================== duoshuo_shortname: short_name =====">
+    <meta name="description" content="评论hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。 首先到多说官网去注册一个账号。然后点击进入添加站点页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为short_name。 在_config.yml中添加多说的配置： duoshuo_shortname: short_name 修改themes\&amp;lt;theme_name&amp;gt;\layout\_">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 入门指南（七） - 评论 & 分享">
 <meta property="og:url" content="http://sycpiek.github.io/2017/04/24/Hexo 入门指南（七） - 评论 & 分享/index.html">
 <meta property="og:site_name" content="Hexo我有一个小小的世界">
-<meta property="og:description" content="评论hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。 首先到多说官网去注册一个账号。然后点击进入添加站点页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为short_name。 在_config.yml中添加多说的配置： ============================== duoshuo_shortname: short_name =====">
-<meta property="og:updated_time" content="2017-04-25T02:28:26.591Z">
+<meta property="og:description" content="评论hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。 首先到多说官网去注册一个账号。然后点击进入添加站点页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为short_name。 在_config.yml中添加多说的配置： duoshuo_shortname: short_name 修改themes\&amp;lt;theme_name&amp;gt;\layout\_">
+<meta property="og:updated_time" content="2017-04-25T02:39:58.522Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 入门指南（七） - 评论 & 分享">
-<meta name="twitter:description" content="评论hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。 首先到多说官网去注册一个账号。然后点击进入添加站点页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为short_name。 在_config.yml中添加多说的配置： ============================== duoshuo_shortname: short_name =====">
+<meta name="twitter:description" content="评论hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。 首先到多说官网去注册一个账号。然后点击进入添加站点页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为short_name。 在_config.yml中添加多说的配置： duoshuo_shortname: short_name 修改themes\&amp;lt;theme_name&amp;gt;\layout\_">
 
     
     <link rel="alternative" href="/atom.xml" title="Hexo我有一个小小的世界" type="application/atom+xml">
@@ -104,9 +104,7 @@
 		<h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p>hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。</p>
 <p>首先到<a href="http://duoshuo.com/" target="_blank" rel="external">多说官网</a>去注册一个账号。然后点击进入<a href="http://duoshuo.com/create-site/" target="_blank" rel="external">添加站点</a>页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为<code>short_name</code>。</p>
 <p>在_config.yml中添加多说的配置：</p>
-<p>==============================</p>
-<p>duoshuo_shortname: short_name</p>
-<p>==============================</p>
+<p><code>duoshuo_shortname: short_name</code></p>
 <p>修改<code>themes\&lt;theme_name&gt;\layout\_partial\article.ejs</code>，把第38行到41行的如下代码：</p>
 <pre><code>&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname){ %&gt;
 &lt;section id=&quot;comments&quot;&gt;
@@ -155,8 +153,6 @@
 <p>##后记</p>
 <p>仅以此教程，悼念<code>Aaron Swartz</code>，RSS和Markdown的联合创始人。没有他，开源博客界就不会有今天。</p>
 <p>##本文来源网络收集.</p>
-<p>categories: Hexo </p>
-<p>tags: Hexo</p>
   
 	</div>
 		<footer class="article-footer clearfix">

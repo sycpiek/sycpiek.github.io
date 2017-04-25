@@ -11,17 +11,17 @@
     
 
     
-    <meta name="description" content="安装和初始化linux下打开bash，win下面打开cmd，输入： ===================== $ npm install hexo -g   $ hexo init blog   $ cd blog   $ npm install   $ hexo server ===================== 访问http://localhost:4000，会看到生成好的博客。 同时">
+    <meta name="description" content="安装和初始化linux下打开bash，win下面打开cmd，输入：  $ npm install hexo -g   $ hexo init blog   $ cd blog   $ npm install   $ hexo server  访问http://localhost:4000，会看到生成好的博客。 同时，在blog文件夹中，文件如下：  2014/11/01  19:45    &amp;lt">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 入门指南（二） - 安装、初始化和配置">
 <meta property="og:url" content="http://sycpiek.github.io/2017/04/24/Hexo 入门指南（二） - 安装、初始化和配置/index.html">
 <meta property="og:site_name" content="Hexo我有一个小小的世界">
-<meta property="og:description" content="安装和初始化linux下打开bash，win下面打开cmd，输入： ===================== $ npm install hexo -g   $ hexo init blog   $ cd blog   $ npm install   $ hexo server ===================== 访问http://localhost:4000，会看到生成好的博客。 同时">
-<meta property="og:updated_time" content="2017-04-25T02:28:45.152Z">
+<meta property="og:description" content="安装和初始化linux下打开bash，win下面打开cmd，输入：  $ npm install hexo -g   $ hexo init blog   $ cd blog   $ npm install   $ hexo server  访问http://localhost:4000，会看到生成好的博客。 同时，在blog文件夹中，文件如下：  2014/11/01  19:45    &amp;lt">
+<meta property="og:updated_time" content="2017-04-25T02:45:25.992Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 入门指南（二） - 安装、初始化和配置">
-<meta name="twitter:description" content="安装和初始化linux下打开bash，win下面打开cmd，输入： ===================== $ npm install hexo -g   $ hexo init blog   $ cd blog   $ npm install   $ hexo server ===================== 访问http://localhost:4000，会看到生成好的博客。 同时">
+<meta name="twitter:description" content="安装和初始化linux下打开bash，win下面打开cmd，输入：  $ npm install hexo -g   $ hexo init blog   $ cd blog   $ npm install   $ hexo server  访问http://localhost:4000，会看到生成好的博客。 同时，在blog文件夹中，文件如下：  2014/11/01  19:45    &amp;lt">
 
     
     <link rel="alternative" href="/atom.xml" title="Hexo我有一个小小的世界" type="application/atom+xml">
@@ -102,7 +102,7 @@
 		</div>
 		
 		<h2 id="安装和初始化"><a href="#安装和初始化" class="headerlink" title="安装和初始化"></a>安装和初始化</h2><p>linux下打开bash，win下面打开cmd，输入：</p>
-<p>=====================</p>
+<hr>
 <pre><code>$ npm install hexo -g 
 
 $ hexo init blog 
@@ -112,10 +112,10 @@ $ cd blog
 $ npm install 
 
 $ hexo server
-</code></pre><p>=====================</p>
+</code></pre><hr>
 <p>访问<a href="http://localhost:4000，会看到生成好的博客。" target="_blank" rel="external">http://localhost:4000，会看到生成好的博客。</a></p>
 <p>同时，在blog文件夹中，文件如下：</p>
-<p>================================================</p>
+<hr>
 <pre><code>2014/11/01  19:45    &lt;DIR&gt;          .
 
 2014/11/01  19:45    &lt;DIR&gt;          ..
@@ -137,9 +137,9 @@ $ hexo server
 2014/11/01  11:16    &lt;DIR&gt;          themes
 
 2014/11/01  11:38             1,844 _config.yml
-</code></pre><p>================================================</p>
+</code></pre><hr>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>站点的配置文件是_config.yml，如果你不小心改花了，这里提供了一份默认的：</p>
-<p>====================================================================================</p>
+<hr>
 <pre><code># Hexo Configuration
 
 ## Docs: http://hexo.io/docs/configuration.html
@@ -291,7 +291,7 @@ exclude_generator:
 deploy:
 
   type:
-</code></pre><p>====================================================================================</p>
+</code></pre><hr>
 <p>官方的页面上也提供了每一项详细的解释。</p>
 <p>我们需要修改的只有Site部分，以及URL部分的url。Site部分每一项依次是标题、副标题、描述、作者、邮箱和语言（天朝大陆填zh-CN）。url改成网站的网址，如果你的网站放在某个子目录下，比如<a href="http://yoursite.com/child，root改成/child。" target="_blank" rel="external">http://yoursite.com/child，root改成/child。</a></p>
 <p>Server部分，如果之前你的服务器没有运行起来，则可能是端口被占了。把port改成别的数字，或者强行关掉占着端口的进程。</p>
@@ -300,8 +300,7 @@ deploy:
 <p>由于google在天朝大陆被墙，进入themes\landscape\layout_partial，打开head.ejs，删掉第31行fonts.googleapis.com的链接。</p>
 <p>下载下来jquery-2.0.3.min.js，放到themes\landscape\source\js文件夹中。之后进入themes\landscape\layout_partial，打开after-footer.ejs，将第17行的路径替换为/js/jquery-2.0.3.min.js。</p>
 <p>至此大功告成。</p>
-<p>##本文来源网络收集.<br>categories: Hexo </p>
-<p>tags: Hexo</p>
+<p>##本文来源网络收集.</p>
   
 	</div>
 		<footer class="article-footer clearfix">
