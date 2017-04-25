@@ -81,6 +81,73 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2017/04/24/hexo-admin学习使用测试/" title="hexo admin学习使用测试" itemprop="url">hexo admin学习使用测试</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
+		
+  <p class="article-time">
+    <time datetime="2017-04-24T13:12:00.000Z" itemprop="datePublished"> 发表于 2017-04-24</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>[TOC]</p>
+<p>##基础入门</p>
+<p>###1. 安装Hexo并创建博客</p>
+<p>npm install -g hexo<br>cd ~/<br>hexo init my-blog<br>cd my-blog<br>npm install</p>
+<p>###2. 安装hexo-admin-qiniu插件并开始使用</p>
+<p>npm install –save hexo-admin-qiniu<br>hexo server -d<br>open <a href="http://localhost:4000/admin/" target="_blank" rel="external">http://localhost:4000/admin/</a></p>
+<p>###3. 站点配置文件添加qiniu配置项</p>
+<p>七牛云存储仓库，请务必使用 “华东区” 服务器 !!!</p>
+<p>获取七牛AK、SK等参考使用技巧中相关文章</p>
+<p>admin:<br>  qiniuCfg:<br>      imageslim: true  # 启动图片瘦身，仅华东区bucket可以使用<br>      AccessKey: ‘your qiniu AK’<br>      SecretKey: ‘your qiniu SK’<br>      BucketName: ‘your BK Name’<br>      bucketHost: ‘you BK Host’</p>
+<p>###4. 发布文章</p>
+<p>点击deploy按钮，发布博客到静态托管网页。 使用之前，需要在博客配置文件_config.yml中配置好deploy属性</p>
+<p>deploy:<br>  type: git<br>  repo:<br>    github: xxxxxxxxxxxx.git,master</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/hexo/">hexo</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2017/04/24/Hexo 入门指南（七） - 评论 & 分享/" title="Hexo 入门指南（七） - 评论 &amp; 分享" itemprop="url">Hexo 入门指南（七） - 评论 &amp; 分享</a>
   </h1>
   <p class="article-author">By
@@ -1012,55 +1079,6 @@ tags:
 
 
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/04/24/我有一个小萝卜/" title="我有一个小萝卜" itemprop="url">我有一个小萝卜</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
-		
-  <p class="article-time">
-    <time datetime="2017-04-24T03:29:59.000Z" itemprop="datePublished"> 发表于 2017-04-24</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix">
     <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
@@ -1100,6 +1118,10 @@ tags:
 		
 			
 				<li><a href="/tags/瞎写/" title="瞎写">瞎写<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
 			
 		
 		</ul>
