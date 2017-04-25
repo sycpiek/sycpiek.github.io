@@ -81,6 +81,94 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2017/04/24/Hexo 入门指南（四） - 页面、导航、边栏、底栏/" title="Hexo 入门指南（四） - 页面、导航、边栏、底栏" itemprop="url">Hexo 入门指南（四） - 页面、导航、边栏、底栏</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
+		
+  <p class="article-time">
+    <time datetime="2017-04-24T03:49:04.000Z" itemprop="datePublished"> 发表于 2017-04-24</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h2><p>命令行键入：</p>
+<p><code>$ hexo new page about</code></p>
+<p>会在source/about中生成index.html。这个就叫做页面，不在文章列表显示，可以通过<a href="http://localhost/about浏览。" target="_blank" rel="external">http://localhost/about浏览。</a></p>
+<p>页面支持文章的大部分属性，除了分类和标签。</p>
+<h2 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h2><p>打开主题中的设置文件，即themes\<theme_name>_config.yml（其中<theme_name>是当前主题的名字，默认为landscape，下同），找到menu:，在列表的末端添加About: 关于。刷新页面，导航栏上就出现了关于链接。</theme_name></theme_name></p>
+<h2 id="边栏"><a href="#边栏" class="headerlink" title="边栏"></a>边栏</h2><p>进入themes\<theme_name>\layout_widget目录中，创建about.ejs文件，模仿其他文件中的模版，输入以下内容：</theme_name></p>
+<hr>
+<pre><code>&lt;% if (site.tags.length){ %&gt; 
+
+  &lt;div class=&quot;widget-wrap&quot;&gt; 
+
+    &lt;h3 class=&quot;widget-title&quot;&gt;About&lt;/h3&gt; 
+
+    &lt;div class=&quot;widget&quot;&gt; 
+
+      邮箱：xxx@xxx.com&lt;br /&gt; 
+
+      微博：@xxxxx 
+
+    &lt;/div&gt; 
+
+  &lt;/div&gt; 
+
+&lt;% } %&gt;
+</code></pre><hr>
+<p>打开themes\<theme_name>_config.yml，找到#Sidebar，在最后面添加- about。刷新页面。</theme_name></p>
+<h2 id="底栏"><a href="#底栏" class="headerlink" title="底栏"></a>底栏</h2><p>打开themes\<theme_name>\layout_partial\footer.ejs修改。</theme_name></p>
+<h2 id="banner"><a href="#banner" class="headerlink" title="banner"></a>banner</h2><p>打开themes\<theme_name>\source\css\images，把banner.jpg换掉。</theme_name></p>
+<p>##本文来源网络收集.</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Hexo/">Hexo</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2017/04/24/Hexo 入门指南（三） - 文章 & 草稿/" title="Hexo 入门指南（三） - 文章 &amp; 草稿" itemprop="url">Hexo 入门指南（三） - 文章 &amp; 草稿</a>
   </h1>
   <p class="article-author">By
@@ -487,86 +575,6 @@ deploy:
 <li><p>git book</p>
 </li>
 </ul>
-<p>##本文来源网络收集.</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Hexo/">Hexo</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/04/24/Hexo 入门指南（七） - 评论 & 分享/" title="Hexo 入门指南（七） - 评论 &amp; 分享" itemprop="url">Hexo 入门指南（七） - 评论 &amp; 分享</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
-		
-  <p class="article-time">
-    <time datetime="2017-04-24T03:49:00.000Z" itemprop="datePublished"> 发表于 2017-04-24</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h1 id="Hexo-入门指南（七）-评论-amp-分享"><a href="#Hexo-入门指南（七）-评论-amp-分享" class="headerlink" title="Hexo 入门指南（七） - 评论 &amp; 分享"></a>Hexo 入门指南（七） - 评论 &amp; 分享</h1><hr>
-<h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p>hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。</p>
-<p>首先到<a href="http://duoshuo.com/" target="_blank" rel="external">多说官网</a>去注册一个账号。然后点击进入<a href="http://duoshuo.com/create-site/" target="_blank" rel="external">添加站点</a>页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为<code>short_name</code>。</p>
-<p>在_config.yml中添加多说的配置：</p>
-<p><code>duoshuo_shortname: short_name</code></p>
-<p>修改<code>themes\&lt;theme_name&gt;\layout\_partial\article.ejs</code>，把第38行到41行的如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname)&#123; %&gt;</div><div class="line"> &lt;section id=&quot;comments&quot;&gt;</div><div class="line">   &lt;div id=&quot;disqus_thread&quot;&gt;</div><div class="line"> &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</div><div class="line">   &lt;/div&gt;</div><div class="line"> &lt;/section&gt;</div><div class="line"> &lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<p>替换成：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</div><div class="line"> &lt;section id=&quot;comments&quot;&gt;</div><div class="line">   &lt;!-- 多说评论框 start --&gt;</div><div class="line">   &lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;&quot; data-title=&quot;&lt;%= post.title %&gt;&quot; data-url=&quot;&lt;%= page.permalink %&gt;&quot;&gt;&lt;/div&gt;</div><div class="line">   &lt;!-- 多说评论框 end --&gt;</div><div class="line">   &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</div><div class="line">   &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">   var duoshuoQuery = &#123;short_name:&apos;&lt;%= config.duoshuo_shortname %&gt;&apos;&#125;;</div><div class="line"> (function() &#123;</div><div class="line">   var ds = document.createElement(&apos;script&apos;);</div><div class="line">   ds.type = &apos;text/javascript&apos;;ds.async = true;</div><div class="line">   ds.src = (document.location.protocol == &apos;https:&apos; ? &apos;https:&apos; : &apos;http:&apos;) + &apos;//static.duoshuo.com/embed.js&apos;;</div><div class="line">   ds.charset = &apos;UTF-8&apos;;</div><div class="line">   (document.getElementsByTagName(&apos;head&apos;)[0] </div><div class="line">    || document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(ds);</div><div class="line"> &#125;)();</div><div class="line">   &lt;/script&gt;</div><div class="line">   &lt;!-- 多说公共JS代码 end --&gt;</div><div class="line"> &lt;/section&gt;</div><div class="line"> &lt;% &#125; %&gt;</div></pre></td></tr></table></figure></p>
-<p>之后，找到第27到29行：  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;% if (post.comments &amp;&amp; config.disqus_shortname)&#123; %&gt;</div><div class="line">   &lt;a href=&quot;&lt;%- post.permalink %&gt;#disqus_thread&quot; class=&quot;article-comment-link&quot;&gt;Comments&lt;/a&gt;</div><div class="line"> &lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<p>替换成： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;% if (post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</div><div class="line">   &lt;a href=&quot;&lt;%- url_for(post.path) %&gt;#comments&quot; class=&quot;article-comment-link&quot;&gt;留言&lt;/a&gt;</div><div class="line"> &lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<h2 id="分享"><a href="#分享" class="headerlink" title="分享"></a>分享</h2><p>hexo默认提供的那四个在国内也被墙了。这里替换成百度一键分享。</p>
-<p>找到<code>themes\landscape\layout\_partialarticle.ejs</code>26行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a data-url=&quot;&lt;%- post.permalink %&gt;&quot; data-id=&quot;&lt;%= post._id %&gt;&quot; class=&quot;article-share-link&quot;&gt;分享&lt;/a&gt;</div></pre></td></tr></table></figure>
-<p>替换成：    </p>
-<pre><code>&lt;a data-url=&quot;&lt;%- post.permalink %&gt;&quot; data-id=&quot;&lt;%= post._id %&gt;&quot; class=&quot;article-share-link bdsharebuttonbox&quot; data-cmd=&quot;more&quot;&gt;分享&lt;/a&gt;
- &lt;script&gt;window._bd_share_config={&quot;common&quot;:{&quot;bdSnsKey&quot;:{},&quot;bdText&quot;:&quot;&quot;,&quot;bdMini&quot;:&quot;1&quot;,&quot;bdMiniList&quot;:false,&quot;bdPic&quot;:&quot;&quot;,&quot;bdStyle&quot;:&quot;2&quot;,&quot;bdSize&quot;:&quot;16&quot;},&quot;share&quot;:{}};with(document)0[(getElementsByTagName(&apos;head&apos;)[0]||body).appendChild(createElement(&apos;script&apos;)).src=&apos;http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=&apos;+~(-new Date()/36e5)];&lt;/script&gt;
-</code></pre><p>之后打开<code>themes\landscape\source\js\script.js</code>，35~86行全部注释掉。</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>仅以此教程，悼念<code>Aaron Swartz</code>，RSS和Markdown的联合创始人。没有他，开源博客界就不会有今天。</p>
 <p>##本文来源网络收集.</p>
 
         
