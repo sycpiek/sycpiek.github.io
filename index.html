@@ -81,6 +81,64 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2017/04/25/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
+		
+  <p class="article-time">
+    <time datetime="2017-04-25T02:22:07.000Z" itemprop="datePublished"> 发表于 2017-04-25</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2017/04/24/hexo-admin学习使用测试/" title="hexo admin学习使用测试" itemprop="url">hexo admin学习使用测试</a>
   </h1>
   <p class="article-author">By
@@ -94,130 +152,16 @@
 </header>
     <div class="article-content">
         
-        <p>[TOC]</p>
-<p>##基础入门</p>
-<p>###1. 安装Hexo并创建博客</p>
-<p>npm install -g hexo<br>cd ~/<br>hexo init my-blog<br>cd my-blog<br>npm install</p>
-<p>###2. 安装hexo-admin-qiniu插件并开始使用</p>
-<p>npm install –save hexo-admin-qiniu<br>hexo server -d<br>open <a href="http://localhost:4000/admin/" target="_blank" rel="external">http://localhost:4000/admin/</a></p>
-<p>###3. 站点配置文件添加qiniu配置项</p>
-<p>七牛云存储仓库，请务必使用 “华东区” 服务器 !!!</p>
-<p>获取七牛AK、SK等参考使用技巧中相关文章</p>
-<p>admin:<br>  qiniuCfg:<br>      imageslim: true  # 启动图片瘦身，仅华东区bucket可以使用<br>      AccessKey: ‘your qiniu AK’<br>      SecretKey: ‘your qiniu SK’<br>      BucketName: ‘your BK Name’<br>      bucketHost: ‘you BK Host’</p>
-<p>###4. 发布文章</p>
-<p>点击deploy按钮，发布博客到静态托管网页。 使用之前，需要在博客配置文件_config.yml中配置好deploy属性</p>
-<p>deploy:<br>  type: git<br>  repo:<br>    github: xxxxxxxxxxxx.git,master</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/hexo/">hexo</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/04/24/Hexo 入门指南（七） - 评论 & 分享/" title="Hexo 入门指南（七） - 评论 &amp; 分享" itemprop="url">Hexo 入门指南（七） - 评论 &amp; 分享</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
-		
-  <p class="article-time">
-    <time datetime="2017-04-24T03:49:49.681Z" itemprop="datePublished"> 发表于 2017-04-24</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p>hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。</p>
-<p>首先到<a href="http://duoshuo.com/" target="_blank" rel="external">多说官网</a>去注册一个账号。然后点击进入<a href="http://duoshuo.com/create-site/" target="_blank" rel="external">添加站点</a>页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为<code>short_name</code>。</p>
-<p>在_config.yml中添加多说的配置：</p>
-<p>==============================</p>
-<p>duoshuo_shortname: short_name</p>
-<p>==============================</p>
-<p>修改<code>themes\&lt;theme_name&gt;\layout\_partial\article.ejs</code>，把第38行到41行的如下代码：</p>
-<pre><code>&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname){ %&gt;
-&lt;section id=&quot;comments&quot;&gt;
-  &lt;div id=&quot;disqus_thread&quot;&gt;
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-&lt;% } %&gt;
-</code></pre><p>替换成：</p>
-<pre><code>&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname){ %&gt;
-&lt;section id=&quot;comments&quot;&gt;
-  &lt;!-- 多说评论框 start --&gt;
-  &lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;&quot; data-title=&quot;&lt;%= post.title %&gt;&quot; data-url=&quot;&lt;%= page.permalink %&gt;&quot;&gt;&lt;/div&gt;
-  &lt;!-- 多说评论框 end --&gt;
-  &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;
-  &lt;script type=&quot;text/javascript&quot;&gt;
-  var duoshuoQuery = {short_name:&apos;&lt;%= config.duoshuo_shortname %&gt;&apos;};
-(function() {
-  var ds = document.createElement(&apos;script&apos;);
-  ds.type = &apos;text/javascript&apos;;ds.async = true;
-  ds.src = (document.location.protocol == &apos;https:&apos; ? &apos;https:&apos; : &apos;http:&apos;) + &apos;//static.duoshuo.com/embed.js&apos;;
-  ds.charset = &apos;UTF-8&apos;;
-  (document.getElementsByTagName(&apos;head&apos;)[0] 
-   || document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(ds);
-})();
-  &lt;/script&gt;
-  &lt;!-- 多说公共JS代码 end --&gt;
-&lt;/section&gt;
-&lt;% } %&gt;
-</code></pre><p>之后，找到第27到29行：</p>
-<pre><code>&lt;% if (post.comments &amp;&amp; config.disqus_shortname){ %&gt;
-  &lt;a href=&quot;&lt;%- post.permalink %&gt;#disqus_thread&quot; class=&quot;article-comment-link&quot;&gt;Comments&lt;/a&gt;
-&lt;% } %&gt;
-</code></pre><p>替换成：</p>
-<pre><code>&lt;% if (post.comments &amp;&amp; config.duoshuo_shortname){ %&gt;
-  &lt;a href=&quot;&lt;%- url_for(post.path) %&gt;#comments&quot; class=&quot;article-comment-link&quot;&gt;留言&lt;/a&gt;
-&lt;% } %&gt;
-</code></pre><p>##分享</p>
-<p>hexo默认提供的那四个在国内也被墙了。这里替换成百度一键分享。</p>
-<p>找到<code>themes\landscape\layout\_partialarticle.ejs</code>26行：</p>
-<pre><code>&lt;a data-url=&quot;&lt;%- post.permalink %&gt;&quot; data-id=&quot;&lt;%= post._id %&gt;&quot; class=&quot;article-share-link&quot;&gt;分享&lt;/a&gt;
-</code></pre><p>替换成：</p>
-<pre><code>&lt;a data-url=&quot;&lt;%- post.permalink %&gt;&quot; data-id=&quot;&lt;%= post._id %&gt;&quot; class=&quot;article-share-link bdsharebuttonbox&quot; data-cmd=&quot;more&quot;&gt;分享&lt;/a&gt;
-&lt;script&gt;window._bd_share_config={&quot;common&quot;:{&quot;bdSnsKey&quot;:{},&quot;bdText&quot;:&quot;&quot;,&quot;bdMini&quot;:&quot;1&quot;,&quot;bdMiniList&quot;:false,&quot;bdPic&quot;:&quot;&quot;,&quot;bdStyle&quot;:&quot;2&quot;,&quot;bdSize&quot;:&quot;16&quot;},&quot;share&quot;:{}};with(document)0[(getElementsByTagName(&apos;head&apos;)[0]||body).appendChild(createElement(&apos;script&apos;)).src=&apos;http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=&apos;+~(-new Date()/36e5)];&lt;/script&gt;
-</code></pre><p>之后打开<code>themes\landscape\source\js\script.js</code>，35~86行全部注释掉。</p>
-<p>##后记</p>
-<p>仅以此教程，悼念<code>Aaron Swartz</code>，RSS和Markdown的联合创始人。没有他，开源博客界就不会有今天。</p>
-<p>##本文来源网络收集.</p>
-<p>categories: Hexo </p>
-<p>tags: Hexo</p>
-
+        <h3 id="基础入门"><a href="#基础入门" class="headerlink" title="基础入门"></a>基础入门</h3><h5 id="1-安装Hexo并创建博客"><a href="#1-安装Hexo并创建博客" class="headerlink" title="1. 安装Hexo并创建博客"></a>1. 安装Hexo并创建博客</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo	</div><div class="line">cd ~/	</div><div class="line">hexo init my-blog	</div><div class="line">cd my-blog	</div><div class="line">npm install</div></pre></td></tr></table></figure>
+<h5 id="2-安装hexo-admin-qiniu插件并开始使用"><a href="#2-安装hexo-admin-qiniu插件并开始使用" class="headerlink" title="2. 安装hexo-admin-qiniu插件并开始使用"></a>2. 安装hexo-admin-qiniu插件并开始使用</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install --save hexo-admin-qiniu	</div><div class="line">hexo server -d	</div><div class="line">open http://localhost:4000/admin/</div></pre></td></tr></table></figure>
+<h5 id="3-站点配置文件添加qiniu配置项"><a href="#3-站点配置文件添加qiniu配置项" class="headerlink" title="3. 站点配置文件添加qiniu配置项"></a>3. 站点配置文件添加qiniu配置项</h5><p>七牛云存储仓库，请务必使用 “华东区” 服务器 !!!</p>
+<p>获取七牛AK、SK等参考使用技巧中相关文章<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">admin:	</div><div class="line">  qiniuCfg:	</div><div class="line">       imageslim: true  # 启动图片瘦身，仅华东区bucket可以使用	</div><div class="line">      AccessKey: &apos;your qiniu AK&apos;	</div><div class="line">      SecretKey: &apos;your qiniu SK&apos;	</div><div class="line">      BucketName: &apos;your BK Name&apos;	</div><div class="line">      bucketHost: &apos;you BK Host&apos;</div></pre></td></tr></table></figure></p>
+<h5 id="4-发布文章"><a href="#4-发布文章" class="headerlink" title="4. 发布文章"></a>4. 发布文章</h5><p>点击deploy按钮，发布博客到静态托管网页。 使用之前，需要在博客配置文件_config.yml中配置好deploy属性</p>
+<pre><code>deploy:    
+  type: git    
+  repo:    
+     github: xxxxxxxxxxxx.git,master
+</code></pre>
         
         
         <p class="article-more-link">
@@ -237,507 +181,6 @@
   
   <span></span> <a href="/tags/Hexo/">Hexo</a>
   </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/04/24/Hexo 入门指南（六） - sitemap、rss 和部署/" title="Hexo 入门指南（六） - sitemap、rss 和部署" itemprop="url">Hexo 入门指南（六） - sitemap、rss 和部署</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
-		
-  <p class="article-time">
-    <time datetime="2017-04-24T03:49:49.666Z" itemprop="datePublished"> 发表于 2017-04-24</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h2 id="sitemap-amp-rss"><a href="#sitemap-amp-rss" class="headerlink" title="sitemap &amp; rss"></a>sitemap &amp; rss</h2><p>切换到blog根目录下，输入：</p>
-<p>====================================</p>
-<pre><code>$ npm install hexo-generator-feed 
-
-$ npm install hexo-generator-sitemap
-</code></pre><p>====================================</p>
-<p>之后重启博客，访问/atom.xml和/sitemap.xml，会发现已经生成了。可以把sitemap提交到搜索引擎的站长平台来增加收录。</p>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>首先按照前面教程（一）的gitcafe部分建立好代码仓库，这里假设你的用户名是your_name。由于ssh配置比较麻烦，这里采用https方式提交。</p>
-<p>找到配置文件中# Deployment一节，修改：</p>
-<p>=======================================================</p>
-<pre><code>type: github 
-
-repository: https://gitcafe.com/your_name/your_name.git 
-
-branch: gitcafe-pages
-</code></pre><p>=======================================================</p>
-<p>之后输入：</p>
-<p>======================</p>
-<pre><code>hexo deploy --generate
-</code></pre><p>======================</p>
-<p>或者</p>
-<p>========================</p>
-<pre><code>$ hexo generate --deploy
-</code></pre><p>========================</p>
-<p>hexo会自动生成并部署。</p>
-<p>如果之前已经生成过了，直接输入：</p>
-<p>=============</p>
-<pre><code>$ hexo deploy
-</code></pre><p>=============</p>
-<p>部署即可。</p>
-<p>##本文来源网络收集.</p>
-<p>categories: Hexo </p>
-<p>tags: Hexo</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Hexo/">Hexo</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/04/24/Hexo 入门指南（二） - 安装、初始化和配置/" title="Hexo 入门指南（二） - 安装、初始化和配置" itemprop="url">Hexo 入门指南（二） - 安装、初始化和配置</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
-		
-  <p class="article-time">
-    <time datetime="2017-04-24T03:49:49.650Z" itemprop="datePublished"> 发表于 2017-04-24</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h2 id="安装和初始化"><a href="#安装和初始化" class="headerlink" title="安装和初始化"></a>安装和初始化</h2><p>linux下打开bash，win下面打开cmd，输入：</p>
-<p>=====================</p>
-<pre><code>$ npm install hexo -g 
-
-$ hexo init blog 
-
-$ cd blog 
-
-$ npm install 
-
-$ hexo server
-</code></pre><p>=====================</p>
-<p>访问<a href="http://localhost:4000，会看到生成好的博客。" target="_blank" rel="external">http://localhost:4000，会看到生成好的博客。</a></p>
-<p>同时，在blog文件夹中，文件如下：</p>
-<p>================================================</p>
-<pre><code>2014/11/01  19:45    &lt;DIR&gt;          .
-
-2014/11/01  19:45    &lt;DIR&gt;          ..
-
-2014/11/01  11:16                68 .gitignore
-
-2014/11/01  17:33            13,767 db.json
-
-2014/11/01  11:16    &lt;DIR&gt;          node_modules
-
-2014/11/01  11:17               186 package.json
-
-2014/11/01  11:23    &lt;DIR&gt;          public
-
-2014/11/01  11:16    &lt;DIR&gt;          scaffolds
-
-2014/11/01  17:31    &lt;DIR&gt;          source
-
-2014/11/01  11:16    &lt;DIR&gt;          themes
-
-2014/11/01  11:38             1,844 _config.yml
-</code></pre><p>================================================</p>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>站点的配置文件是_config.yml，如果你不小心改花了，这里提供了一份默认的：</p>
-<p>====================================================================================</p>
-<pre><code># Hexo Configuration
-
-## Docs: http://hexo.io/docs/configuration.html
-
-## Source: https://github.com/hexojs/hexo/
-
-# Site
-
-title: Hexo
-
-subtitle:
-
-description:
-
-author: John Doe
-
-email:
-
-language:
-
-# URL
-
-## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;
-
-url: http://yoursite.com
-
-root: /
-
-permalink: :year/:month/:day/:title/
-
-tag_dir: tags
-
-archive_dir: archives
-
-category_dir: categories
-
-code_dir: downloads/code
-
-permalink_defaults:
-
-# Directory
-
-source_dir: source
-
-public_dir: public
-
-# Writing
-
-new_post_name: :title.md # File name of new posts
-
-default_layout: post
-
-titlecase: false # Transform title into titlecase
-
-external_link: true # Open external links in new tab
-
-filename_case: 0
-
-render_drafts: false
-
-post_asset_folder: false
-
-relative_link: false
-
-highlight:
-
-  enable: true
-
-  line_number: true
-
-  tab_replace:
-
-# Category &amp; Tag
-
-default_category: uncategorized
-
-category_map:
-
-tag_map:
-
-# Archives
-
-## 2: Enable pagination
-
-## 1: Disable pagination
-
-## 0: Fully Disable
-
-archive: 2
-
-category: 2
-
-tag: 2
-
-# Server
-
-## Hexo uses Connect as a server
-
-## You can customize the logger format as defined in
-
-## http://www.senchalabs.org/connect/logger.html
-
-port: 4000
-
-server_ip: localhost
-
-logger: false
-
-logger_format: dev
-
-# Date / Time format
-
-## Hexo uses Moment.js to parse and display date
-
-## You can customize the date format as defined in
-
-## http://momentjs.com/docs/#/displaying/format/
-
-date_format: MMM D YYYY
-
-time_format: H:mm:ss
-
-# Pagination
-
-## Set per_page to 0 to disable pagination
-
-per_page: 10
-
-pagination_dir: page
-
-# Disqus
-
-disqus_shortname:
-
-# Extensions
-
-## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
-
-## Themes: https://github.com/hexojs/hexo/wiki/Themes
-
-theme: landscape
-
-exclude_generator:
-
-# Deployment
-
-## Docs: http://hexo.io/docs/deployment.html
-
-deploy:
-
-  type:
-</code></pre><p>====================================================================================</p>
-<p>官方的页面上也提供了每一项详细的解释。</p>
-<p>我们需要修改的只有Site部分，以及URL部分的url。Site部分每一项依次是标题、副标题、描述、作者、邮箱和语言（天朝大陆填zh-CN）。url改成网站的网址，如果你的网站放在某个子目录下，比如<a href="http://yoursite.com/child，root改成/child。" target="_blank" rel="external">http://yoursite.com/child，root改成/child。</a></p>
-<p>Server部分，如果之前你的服务器没有运行起来，则可能是端口被占了。把port改成别的数字，或者强行关掉占着端口的进程。</p>
-<p>其它设置项先不用管，将会在接下来的文章中解释。</p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>如果页面中出现中文，应以UTF-8无BOM编码格式，所以不要用win自带的记事本，而是用notepad++这种支持编码转换的编辑器。</p>
-<p>由于google在天朝大陆被墙，进入themes\landscape\layout_partial，打开head.ejs，删掉第31行fonts.googleapis.com的链接。</p>
-<p>下载下来jquery-2.0.3.min.js，放到themes\landscape\source\js文件夹中。之后进入themes\landscape\layout_partial，打开after-footer.ejs，将第17行的路径替换为/js/jquery-2.0.3.min.js。</p>
-<p>至此大功告成。</p>
-<p>##本文来源网络收集.<br>categories: Hexo </p>
-<p>tags: Hexo</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Hexo/">Hexo</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/04/24/更新了一下主题/" title="更新了一下主题。" itemprop="url">更新了一下主题。</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
-		
-  <p class="article-time">
-    <time datetime="2017-04-24T03:49:49.619Z" itemprop="datePublished"> 发表于 2017-04-24</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>但是好多都弄不太懂。对于不是程序猿的我来说，好难啊！好崩溃啊！<br>想优雅简单的免费的自己的博客好烦啊。怎么才能简单点啊！</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/04/24/Hexo 入门指南（一） - 简介 & 准备/" title="Hexo 入门指南（一） - 简介 &amp; 准备" itemprop="url">Hexo 入门指南（一） - 简介 &amp; 准备</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
-		
-  <p class="article-time">
-    <time datetime="2017-04-24T03:49:49.619Z" itemprop="datePublished"> 发表于 2017-04-24</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>Hexo是一个开源的静态博客生成器,用node.js开发,作者是台湾大学生tommy351。</p>
-<h2 id="为什么是博客"><a href="#为什么是博客" class="headerlink" title="为什么是博客"></a>为什么是博客</h2><p>对于个人网站来说,没有比博客更合适的形式了。在博客中,文章才是最主要的,一切都显得主次分明,干净利落。相比之下,论坛中主题和回复鱼龙混杂,阅读体验非常差。同时,博客比论坛的数据库小很多,便于维护。</p>
-<h2 id="为什么是静态博客"><a href="#为什么是静态博客" class="headerlink" title="为什么是静态博客"></a>为什么是静态博客</h2><p>很多人选择在虚拟主机或vps上面搭建动态博客。但是这些主机商通常“免费的不稳定,稳定的不免费”。前一段时间,我观察了我的个人博客友链上面的几个站点,一部分在十几天之后就销声匿迹了。独立博客如此麻烦的维护工作,能不能减轻一些呢?正如阮一峰前辈所说,blogger分为三个阶段。最开始,是门户博客。之后,是独立博客。最后,觉得独立博客自己管理起来费劲,便找个别人来管的空间,自己负责写就好。如果我们能够找到这样的空间,在自己保留最大控制权前提下,由别人托管,会省去不少事情。</p>
-<p>静态博客编译之后是纯html页面,优点就是支持它的环境十分好找,例如github、gitcafe、七牛云存储等站点都支持静态页面托管,自然是我们的首选了。由于github page在国内访问较慢,这篇文章用gitcafe做示范。gitcafe是天朝本地化的github,同样提供展示页和域名绑定功能,不需要备案,就是爽。</p>
-<p>但是静态博客并非没有缺点。动态博客更新文章时,脚本是不变的,只需要更新数据库。静态博客要频繁改动文件,不支持增量式上传的东西,比如ftp,就难于管理。此外,还要十分熟悉git各种命令,才能部署页面。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
-<li><p>git</p>
-</li>
-<li><p>node.js</p>
-</li>
-<li><p>markdown编辑器</p>
-</li>
-<li><p>gitcafe</p>
-</li>
-<li><p>域名</p>
-</li>
-</ol>
-<p>markdown编辑器是非必须的,只要你熟悉语法,随便一个编辑器来写都不是问题。</p>
-<p>域名也是非必须的,gitcafe pages服务提供免费的二级域名。注册域名的教程这里就不写了。</p>
-<h2 id="安装-git"><a href="#安装-git" class="headerlink" title="安装 git"></a>安装 git</h2><p>git的客户端,本人推荐git-scm。</p>
-<p>linux下面,在bash中键入:</p>
-<p>(Ubuntu, Debian)</p>
-<p>==========================</p>
-<p>$ sudo apt-get install git</p>
-<p>==========================</p>
-<p>(Fedora, Red Hat, CentOS)</p>
-<p>======================</p>
-<p>$ sudo yum install git</p>
-<p>======================</p>
-<p>windows或mac下,直接到git-scm官网下载安装。</p>
-<h2 id="安装-node-js"><a href="#安装-node-js" class="headerlink" title="安装 node.js"></a>安装 node.js</h2><h3 id="linux下"><a href="#linux下" class="headerlink" title="linux下:"></a>linux下:</h3><p>=============================</p>
-<pre><code>$ sudo apt-get install nodejs 
-
-$ sudo apt-get install npm
-</code></pre><p>=============================</p>
-<p>yum同理。</p>
-<p>windows或者mac下,直接到node.js官网下载安装。    windows还要设置环境变量,把node.js安装路径写进path里面,用半角分号分隔。</p>
-<h2 id="markdown-编辑器"><a href="#markdown-编辑器" class="headerlink" title="markdown 编辑器"></a>markdown 编辑器</h2><p>windows下推荐markdown pad。</p>
-<p>mac下推荐mou。</p>
-<h2 id="gitcafe"><a href="#gitcafe" class="headerlink" title="gitcafe"></a>gitcafe</h2><p>首先注册一个账号,之后点击查看如何使用pages服务。</p>
-<h2 id="相关网页"><a href="#相关网页" class="headerlink" title="相关网页"></a>相关网页</h2><ol>
-<li><p>Hexo主页</p>
-</li>
-<li><p>Hexo github 地址</p>
-</li>
-<li><p>git book</p>
-</li>
-</ol>
-<p>##本文来源网络收集.<br>categories: Hexo </p>
-<p>tags: Hexo</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
 
 </div>
 
@@ -854,7 +297,7 @@ $ sudo apt-get install npm
 		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
 		
   <p class="article-time">
-    <time datetime="2017-04-24T03:49:49.603Z" itemprop="datePublished"> 发表于 2017-04-24</time>
+    <time datetime="2017-04-24T03:49:00.000Z" itemprop="datePublished"> 发表于 2017-04-24</time>
     
   </p>
 </header>
@@ -922,69 +365,73 @@ $ sudo apt-get install npm
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/04/24/Hexo 入门指南（三） - 文章 & 草稿/" title="Hexo 入门指南（三） - 文章 &amp; 草稿" itemprop="url">Hexo 入门指南（三） - 文章 &amp; 草稿</a>
+      <a href="/2017/04/24/Hexo 入门指南（一） - 简介 & 准备/" title="Hexo 入门指南（一） - 简介 &amp; 准备" itemprop="url">Hexo 入门指南（一） - 简介 &amp; 准备</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
 		
   <p class="article-time">
-    <time datetime="2017-04-24T03:49:49.588Z" itemprop="datePublished"> 发表于 2017-04-24</time>
+    <time datetime="2017-04-24T03:49:00.000Z" itemprop="datePublished"> 发表于 2017-04-24</time>
     
   </p>
 </header>
     <div class="article-content">
         
-        <p>##文章<br>命令行中输入：</p>
-<p>========================</p>
-<pre><code>$ hexo new &quot;new article&quot;
-</code></pre><p>========================</p>
-<p>之后在source/_posts目录下面，多了一个new-article.md的文件。</p>
-<p>打开之后我们会看到：</p>
-<p>=========================</p>
-<pre><code>---
-title: new article 
-
-date: 2014-11-01 20:10:33 
-
-tags: 
-
----
-</code></pre><p>=========================</p>
-<p>文件的开头是属性，采用统一的yaml格式，用三条短横线分隔。下面是文章正文。</p>
-<p>文章的正文支持markdown格式，建议你先学习一下它的语法。markdown不像html似的一大堆标签，很简单，只有几个符号。</p>
-<p>新建、删除或修改文章后，不需要重启hexo server，刷新一下即可预览。</p>
-<p>##属性<br>文章可以拥有如下属性：</p>
-<p>Setting Description Default</p>
-<p>layout    Layout    post或page    </p>
-<p>title    文章的标题    </p>
-<p>date    创建日期    文件的创建日期    </p>
-<p>updated    修改日期    文件的修改日期    </p>
-<p>comments    是否开启评论    true    </p>
-<p>tags    标签    </p>
-<p>categories    分类    </p>
-<p>permalink    url中的名字    文件名 </p>
-<p>动态博客中通过发布文章页面设置的各种属性，在hexo里要这样设置。</p>
-<h2 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h2><p>例如：</p>
-<p>===========</p>
-<p>categories: </p>
-<ul>
-<li>日记 </li>
-</ul>
-<p>tags: </p>
-<ul>
-<li><p>Hexo </p>
+        <p>Hexo是一个开源的静态博客生成器,用node.js开发,作者是台湾大学生tommy351。</p>
+<h2 id="为什么是博客"><a href="#为什么是博客" class="headerlink" title="为什么是博客"></a>为什么是博客</h2><p>对于个人网站来说,没有比博客更合适的形式了。在博客中,文章才是最主要的,一切都显得主次分明,干净利落。相比之下,论坛中主题和回复鱼龙混杂,阅读体验非常差。同时,博客比论坛的数据库小很多,便于维护。</p>
+<h2 id="为什么是静态博客"><a href="#为什么是静态博客" class="headerlink" title="为什么是静态博客"></a>为什么是静态博客</h2><p>很多人选择在虚拟主机或vps上面搭建动态博客。但是这些主机商通常“免费的不稳定,稳定的不免费”。前一段时间,我观察了我的个人博客友链上面的几个站点,一部分在十几天之后就销声匿迹了。独立博客如此麻烦的维护工作,能不能减轻一些呢?正如阮一峰前辈所说,blogger分为三个阶段。最开始,是门户博客。之后,是独立博客。最后,觉得独立博客自己管理起来费劲,便找个别人来管的空间,自己负责写就好。如果我们能够找到这样的空间,在自己保留最大控制权前提下,由别人托管,会省去不少事情。</p>
+<p>静态博客编译之后是纯html页面,优点就是支持它的环境十分好找,例如github、gitcafe、七牛云存储等站点都支持静态页面托管,自然是我们的首选了。由于github page在国内访问较慢,这篇文章用gitcafe做示范。gitcafe是天朝本地化的github,同样提供展示页和域名绑定功能,不需要备案,就是爽。</p>
+<p>但是静态博客并非没有缺点。动态博客更新文章时,脚本是不变的,只需要更新数据库。静态博客要频繁改动文件,不支持增量式上传的东西,比如ftp,就难于管理。此外,还要十分熟悉git各种命令,才能部署页面。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li><p>git</p>
 </li>
 <li><p>node.js</p>
 </li>
-</ul>
-<p>===========</p>
-<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>同wordpress一样，
+<li><p>markdown编辑器</p>
+</li>
+<li><p>gitcafe</p>
+</li>
+<li><p>域名</p>
+</li>
+</ol>
+<p>markdown编辑器是非必须的,只要你熟悉语法,随便一个编辑器来写都不是问题。</p>
+<p>域名也是非必须的,gitcafe pages服务提供免费的二级域名。注册域名的教程这里就不写了。</p>
+<h2 id="安装-git"><a href="#安装-git" class="headerlink" title="安装 git"></a>安装 git</h2><p>git的客户端,本人推荐git-scm。</p>
+<p>linux下面,在bash中键入:</p>
+<p>(Ubuntu, Debian)</p>
+<p>==========================</p>
+<p>$ sudo apt-get install git</p>
+<p>==========================</p>
+<p>(Fedora, Red Hat, CentOS)</p>
+<p>======================</p>
+<p>$ sudo yum install git</p>
+<p>======================</p>
+<p>windows或mac下,直接到git-scm官网下载安装。</p>
+<h2 id="安装-node-js"><a href="#安装-node-js" class="headerlink" title="安装 node.js"></a>安装 node.js</h2><h3 id="linux下"><a href="#linux下" class="headerlink" title="linux下:"></a>linux下:</h3><p>=============================</p>
+<pre><code>$ sudo apt-get install nodejs 
+
+$ sudo apt-get install npm
+</code></pre><p>=============================</p>
+<p>yum同理。</p>
+<p>windows或者mac下,直接到node.js官网下载安装。    windows还要设置环境变量,把node.js安装路径写进path里面,用半角分号分隔。</p>
+<h2 id="markdown-编辑器"><a href="#markdown-编辑器" class="headerlink" title="markdown 编辑器"></a>markdown 编辑器</h2><p>windows下推荐markdown pad。</p>
+<p>mac下推荐mou。</p>
+<h2 id="gitcafe"><a href="#gitcafe" class="headerlink" title="gitcafe"></a>gitcafe</h2><p>首先注册一个账号,之后点击查看如何使用pages服务。</p>
+<h2 id="相关网页"><a href="#相关网页" class="headerlink" title="相关网页"></a>相关网页</h2><ol>
+<li><p>Hexo主页</p>
+</li>
+<li><p>Hexo github 地址</p>
+</li>
+<li><p>git book</p>
+</li>
+</ol>
+<p>##本文来源网络收集.<br>categories: Hexo </p>
+<p>tags: Hexo</p>
+
         
         
         <p class="article-more-link">
-          
-            <a href="/2017/04/24/Hexo 入门指南（三） - 文章 & 草稿/#more">Read More</a>
           
        </p>
     </div>
@@ -1021,67 +468,9 @@ tags:
 
 
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/04/24/hello-world/" title="Hello World" itemprop="url">Hello World</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="sycpiek" target="_blank" itemprop="author">sycpiek</a>
-		
-  <p class="article-time">
-    <time datetime="2017-04-24T03:37:47.550Z" itemprop="datePublished"> 发表于 2017-04-24</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
   </nav>
 
 </div>
@@ -1100,7 +489,11 @@ tags:
 		<ul>
 		
 		  
-			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>5</sup></a></li>
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>7</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/我/" title="我">我<sup>1</sup></a></li>
 		  
 		
 		</ul>
@@ -1113,7 +506,7 @@ tags:
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>5</sup></a></li>
+				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>7</sup></a></li>
 			
 		
 			
@@ -1121,7 +514,9 @@ tags:
 			
 		
 			
-				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+				<li><a href="/tags/记录/" title="记录">记录<sup>1</sup></a></li>
+			
+		
 			
 		
 		</ul>
