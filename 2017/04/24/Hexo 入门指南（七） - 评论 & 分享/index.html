@@ -18,7 +18,7 @@
 <meta property="og:url" content="http://sycpiek.github.io/2017/04/24/Hexo 入门指南（七） - 评论 & 分享/index.html">
 <meta property="og:site_name" content="Hexo我有一个小小的世界">
 <meta property="og:description" content="评论hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。 首先到多说官网去注册一个账号。然后点击进入添加站点页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为short_name。 在_config.yml中添加多说的配置： duoshuo_shortname: short_name 修改themes\&amp;lt;theme_name&amp;gt;\layout\_">
-<meta property="og:updated_time" content="2017-04-25T02:57:59.175Z">
+<meta property="og:updated_time" content="2017-04-25T03:05:46.894Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 入门指南（七） - 评论 & 分享">
 <meta name="twitter:description" content="评论hexo默认集成了disqus，但是在天朝明显多说更受欢迎一点。 首先到多说官网去注册一个账号。然后点击进入添加站点页面，填写所有信息。注意，多说域名的前缀就是站点的短网址，下面要用到，这里假设为short_name。 在_config.yml中添加多说的配置： duoshuo_shortname: short_name 修改themes\&amp;lt;theme_name&amp;gt;\layout\_">
@@ -106,14 +106,7 @@
 <p>在_config.yml中添加多说的配置：</p>
 <p><code>duoshuo_shortname: short_name</code></p>
 <p>修改<code>themes\&lt;theme_name&gt;\layout\_partial\article.ejs</code>，把第38行到41行的如下代码：</p>
-<pre><code>&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname){ %&gt;
-&lt;section id=&quot;comments&quot;&gt;
-  &lt;div id=&quot;disqus_thread&quot;&gt;
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-&lt;% } %&gt;
-</code></pre><p>替换成：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">    &lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname)&#123; %&gt;</div><div class="line">    &lt;section id=&quot;comments&quot;&gt;</div><div class="line">      &lt;div id=&quot;disqus_thread&quot;&gt;</div><div class="line">    &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    &lt;/section&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line"> ```   </div><div class="line"></div><div class="line">替换成：</div></pre></td></tr></table></figure>
 <pre><code>&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname){ %&gt;
 &lt;section id=&quot;comments&quot;&gt;
   &lt;!-- 多说评论框 start --&gt;
@@ -134,22 +127,18 @@
   &lt;!-- 多说公共JS代码 end --&gt;
 &lt;/section&gt;
 &lt;% } %&gt;
-</code></pre><p>之后，找到第27到29行：</p>
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">之后，找到第27到29行：</div></pre></td></tr></table></figure>
 <pre><code>&lt;% if (post.comments &amp;&amp; config.disqus_shortname){ %&gt;
   &lt;a href=&quot;&lt;%- post.permalink %&gt;#disqus_thread&quot; class=&quot;article-comment-link&quot;&gt;Comments&lt;/a&gt;
 &lt;% } %&gt;
-</code></pre><p>替换成：</p>
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">替换成：</div></pre></td></tr></table></figure>
 <pre><code>&lt;% if (post.comments &amp;&amp; config.duoshuo_shortname){ %&gt;
   &lt;a href=&quot;&lt;%- url_for(post.path) %&gt;#comments&quot; class=&quot;article-comment-link&quot;&gt;留言&lt;/a&gt;
 &lt;% } %&gt;
-</code></pre><p>##分享</p>
-<p>hexo默认提供的那四个在国内也被墙了。这里替换成百度一键分享。</p>
-<p>找到<code>themes\landscape\layout\_partialarticle.ejs</code>26行：</p>
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">##分享</div><div class="line"></div><div class="line">hexo默认提供的那四个在国内也被墙了。这里替换成百度一键分享。</div><div class="line"></div><div class="line">找到`themes\landscape\layout\_partialarticle.ejs`26行：</div></pre></td></tr></table></figure>
 <pre><code>&lt;a data-url=&quot;&lt;%- post.permalink %&gt;&quot; data-id=&quot;&lt;%= post._id %&gt;&quot; class=&quot;article-share-link&quot;&gt;分享&lt;/a&gt;
-</code></pre><p>替换成：</p>
-<pre><code>&lt;a data-url=&quot;&lt;%- post.permalink %&gt;&quot; data-id=&quot;&lt;%= post._id %&gt;&quot; class=&quot;article-share-link bdsharebuttonbox&quot; data-cmd=&quot;more&quot;&gt;分享&lt;/a&gt;
-&lt;script&gt;window._bd_share_config={&quot;common&quot;:{&quot;bdSnsKey&quot;:{},&quot;bdText&quot;:&quot;&quot;,&quot;bdMini&quot;:&quot;1&quot;,&quot;bdMiniList&quot;:false,&quot;bdPic&quot;:&quot;&quot;,&quot;bdStyle&quot;:&quot;2&quot;,&quot;bdSize&quot;:&quot;16&quot;},&quot;share&quot;:{}};with(document)0[(getElementsByTagName(&apos;head&apos;)[0]||body).appendChild(createElement(&apos;script&apos;)).src=&apos;http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=&apos;+~(-new Date()/36e5)];&lt;/script&gt;
-</code></pre><p>之后打开<code>themes\landscape\source\js\script.js</code>，35~86行全部注释掉。</p>
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">替换成：</div><div class="line"></div><div class="line">```    </div><div class="line">    &lt;a data-url=&quot;&lt;%- post.permalink %&gt;&quot; data-id=&quot;&lt;%= post._id %&gt;&quot; class=&quot;article-share-link bdsharebuttonbox&quot; data-cmd=&quot;more&quot;&gt;分享&lt;/a&gt;</div><div class="line">    &lt;script&gt;window._bd_share_config=&#123;&quot;common&quot;:&#123;&quot;bdSnsKey&quot;:&#123;&#125;,&quot;bdText&quot;:&quot;&quot;,&quot;bdMini&quot;:&quot;1&quot;,&quot;bdMiniList&quot;:false,&quot;bdPic&quot;:&quot;&quot;,&quot;bdStyle&quot;:&quot;2&quot;,&quot;bdSize&quot;:&quot;16&quot;&#125;,&quot;share&quot;:&#123;&#125;&#125;;with(document)0[(getElementsByTagName(&apos;head&apos;)[0]||body).appendChild(createElement(&apos;script&apos;)).src=&apos;http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=&apos;+~(-new Date()/36e5)];&lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>之后打开<code>themes\landscape\source\js\script.js</code>，35~86行全部注释掉。</p>
 <p>##后记</p>
 <p>仅以此教程，悼念<code>Aaron Swartz</code>，RSS和Markdown的联合创始人。没有他，开源博客界就不会有今天。</p>
 <p>##本文来源网络收集.</p>
